@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop - <span id="store-title-shop">My Brand Store</span></title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="logo-container">
+<img src="images/logo.png" alt="Logo" id="store-logo-shop" />
+<h1 id="store-name-shop">My Brand Store</h1>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="cart.html">Cart</a>
+<a href="admin.html" class="admin-link">Admin</a>
+<button id="theme-toggle">🌙</button>
+</nav>
+</header>
+
+<main>
+<section class="shop">
+<h1>Shop All Products</h1>
+
+<div class="shop-controls">
+<input type="text" id="search-input" placeholder="Search products...">
+<select id="sort-select">
+<option value="">Sort by</option>
+<option value="price-asc">Price: Low to High</option>
+<option value="price-desc">Price: High to Low</option>
+<option value="stock-desc">Stock: High to Low</option>
+</select>
+</div>
+
+<div class="products-grid" id="shop-products"></div>
+</section>
+</main>
+
+<footer>
+<div class="footer-logo">
+<img src="images/logo.png" alt="Logo" />
+<span id="footer-store-name-shop">My Brand Store</span>
+</div>
+<p>&copy; <span id="footer-year-shop">2026</span> My Brand. All rights reserved.</p>
+</footer>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

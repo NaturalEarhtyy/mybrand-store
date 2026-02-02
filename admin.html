@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - My Brand Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="logo-container">
+<img src="images/logo.png" alt="Logo" id="admin-logo-preview"/>
+<h1 id="admin-store-name">My Brand Store</h1>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="cart.html">Cart</a>
+<button id="theme-toggle">🌙</button>
+</nav>
+</header>
+
+<main>
+<section class="admin-panel">
+<h1>Admin Dashboard</h1>
+
+<!-- Store Branding -->
+<h2>Store Branding</h2>
+<label>Store Name:</label>
+<input type="text" id="admin-store-name-input">
+<label>Logo:</label>
+<input type="file" id="admin-logo-input" accept="image/*">
+<label>Hero Background:</label>
+<input type="file" id="admin-hero-bg" accept="image/*">
+<label>Hero Title:</label>
+<input type="text" id="admin-hero-title">
+<label>Hero Subtitle:</label>
+<input type="text" id="admin-hero-subtitle">
+
+<!-- Products -->
+<h2>Add New Product</h2>
+<form id="product-form">
+<label>Title:</label>
+<input type="text" id="title" required>
+<label>Description:</label>
+<textarea id="description" rows="3"></textarea>
+<label>Price:</label>
+<input type="text" id="price" required>
+<label>Stock:</label>
+<input type="number" id="stock" required>
+<label>Payment Link:</label>
+<input type="text" id="link">
+<label>Product Image:</label>
+<input type="file" id="image" accept="image/*">
+<label>Feature Product?</label>
+<select id="feature-select">
+<option value="no">No</option>
+<option value="yes">Yes</option>
+</select>
+<button type="submit" class="btn">Add Product</button>
+</form>
+<p id="admin-message"></p>
+
+<h2>Existing Products</h2>
+<div id="admin-product-list"></div>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 My Brand Store Admin Panel</p>
+</footer>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
